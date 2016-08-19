@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>music box</title>
+		<link rel="stylesheet" href="css/stylesheets/style.css">
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
+	</head>
+
+	<body>
+		<div id="background"></div>
+		<div id="player">
+			<div class="cover"></div>
+			<div class="ctrl">
+				<div class="tag">
+					<strong>Title</strong>
+					<span class="artist">Artist</span>
+					<span class="album">Album</span>
+				</div>
+				<div class="control">
+					<div class="left">
+						<div class="rewind icon"></div>
+						<div class="playback icon"></div>
+						<div class="fastforward icon"></div>
+					</div>
+					<div class="volume right">
+						<div class="mute icon left"></div>
+						<div class="slider left">
+							<div class="pace"></div>
+							<a class="ui-slider-handle" href="javarscript:;"></a>
+						</div>
+					</div>
+				</div>
+				<div class="progress">
+					<div class="slider">
+						<div class="loaded"></div>
+						<div class="pace"></div>
+						<a class="ui-slider-handle" href="javarscript:;"></a>
+					</div>
+					<div class="timer left"><strong>00:00</strong><span>&nbsp;/&nbsp;00:00</span></div>
+					<div class="right">
+						<div class="repeat icon"></div>
+						<div class="shuffle icon"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul id="playlist"></ul>
+		<dl id="lrcs" class="fl">
+			<dt>
+				<div class="title">
+					<p id="title"></p>
+				</div>
+			</dt>
+			<dd>
+				<div id='lrcContent'></div>
+			</dd>
+		</dl>
+		<script src="js/script.js"></script>
+	</body>
+
+</html>
